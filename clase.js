@@ -8,6 +8,11 @@ Personas.prototype.saludar = function () {
     console.log(`Hola, me llamo ${this.nombre} ${this.apellido}`);
 }
 
+let name = 'Carlos';
+let age = 47;
+
+obj = { name, age };
+console.log(obj);
 Personas.prototype.soyAlto = function () {
     return this.altura > 1.8
 }
