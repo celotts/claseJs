@@ -69,6 +69,18 @@ let array = [1, 2, 3, [4, 5, 6, [7, 8, 9]]];
 
 console.log(array.flat());
 
+// aplanar segundo nivel
+console.log(array.flat(2));
+
+
+//FlapMap 
+let array2 = [1, 2, 3, 4, 5];
+console.log(array2.flatMap(value => [value, value * 2]));
+
+
+//FlapMap solo resultado
+let array21 = [1, 2, 3, 4, 5];
+console.log(array21.flatMap(value => [value * 2]));
 
 Personas.prototype.soyAlto = function () {
     return this.altura > 1.8
