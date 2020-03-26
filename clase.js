@@ -63,6 +63,13 @@ const month = match[2]
 const day = match[3]
 
 console.log(year, month, day);
+
+// Cre array con  subniveles
+let array = [1, 2, 3, [4, 5, 6, [7, 8, 9]]];
+
+console.log(array.flat());
+
+
 Personas.prototype.soyAlto = function () {
     return this.altura > 1.8
 }
