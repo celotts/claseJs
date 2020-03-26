@@ -53,6 +53,16 @@ const objx = {
 // Muestra los objeto age1 and country
 let { name1, ...all } = objx;
 console.log(name1, all);
+
+// Expresion regular para manejar fecha
+const regxData = /([0-9]{2})-([0-9]{2})-([0-9]{4})/
+const match = regxData.exec('26-03-2020');
+
+const year = match[1]
+const month = match[2]
+const day = match[3]
+
+console.log(year, month, day);
 Personas.prototype.soyAlto = function () {
     return this.altura > 1.8
 }
